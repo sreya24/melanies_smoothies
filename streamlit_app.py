@@ -25,7 +25,7 @@ pd_df = my_dataframe.to_pandas()
 Ingredients_list = st.multiselect(
   'Choose up tp 5 ingredients :'
   ,my_dataframe
-  , max_selection=5
+  , max_selections=5
 )
 
 if Ingredients_list :
