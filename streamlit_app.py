@@ -26,7 +26,7 @@ if Ingredients_list :
         Ingredients_string += fruit_chosen + ' '
         st.subheader(fruit_chosen +'Nutrition Information')
         smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-        sf.df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
+        sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
 
    # st.write(Ingredients_string)
 
@@ -42,4 +42,5 @@ if Ingredients_list :
        st.success(f"Your Smoothie is ordered!, {name_on_order}!",icon="✅")
 import requests
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-sf.df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
+sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
+
