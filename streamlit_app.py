@@ -22,7 +22,11 @@ pd_df = my_dataframe.to_pandas()
 #st.dataframe(pd_df)
 #st.stop()
 
-Ingredients_list = st.multiselect('Choose up tp 5 ingredients :',my_dataframe, max_selection=5)
+Ingredients_list = st.multiselect(
+  'Choose up tp 5 ingredients :'
+  ,my_dataframe
+  , max_selection=5
+)
 
 if Ingredients_list :
     Ingredients_string=''
